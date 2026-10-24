@@ -28,7 +28,8 @@ let package = Package(
                 "project.yml",
                 "LGChannelSearch.xcodeproj",
                 "LICENSE",
-                "README.md"
+                "README.md",
+                "docs"
             ],
             sources: [
                 "Core",

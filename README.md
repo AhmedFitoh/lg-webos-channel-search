@@ -11,6 +11,14 @@ Built specifically to solve how slow and cumbersome it is to navigate 2,500+ sat
 
 ---
 
+## Screenshots
+
+| Channel Browser | Instant Arabic Search | Built-in Remote | Connect & Auto-Discovery |
+| :---: | :---: | :---: | :---: |
+| <img src="docs/screenshots/channels.png" width="220" alt="Channel Browser" /> | <img src="docs/screenshots/search.png" width="220" alt="Arabic Search" /> | <img src="docs/screenshots/remote.png" width="220" alt="TV Remote Control" /> | <img src="docs/screenshots/connect.png" width="220" alt="Connect & Auto-Discovery" /> |
+
+---
+
 ## Features
 
 - **Instant Arabic & English Search**:

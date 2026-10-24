@@ -85,6 +85,15 @@ final class AppCoordinator {
             _ = try? repo.upsertChannels(from: dtos)
             channelListViewModel.reloadFromCache()
         }
+        if args.contains("--show-remote") {
+            isShowingRemoteSheet = true
+        }
+        if args.contains("--show-connect") {
+            isShowingConnectSheet = true
+        }
+        if let qIdx = args.firstIndex(of: "--search-query"), qIdx + 1 < args.count {
+            channelListViewModel.searchQuery = args[qIdx + 1]
+        }
         #endif
 
         if isMockMode {
