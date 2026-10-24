@@ -1,0 +1,34 @@
+{
+  "id" : "cur_channel_1",
+  "payload" : {
+    "channelId" : "7_2_929_0_700_7070_20480",
+    "channelModeId" : 2,
+    "channelModeName" : "Satellite",
+    "channelName" : "Cookies Kids TV",
+    "channelNumber" : "929",
+    "channelTypeId" : 6,
+    "channelTypeName" : "Satellite Digital TV",
+    "dualChannel" : {
+      "dualChannelId" : null,
+      "dualChannelNumber" : null,
+      "dualChannelTypeId" : 255,
+      "dualChannelTypeName" : null
+    },
+    "favoriteGroup" : null,
+    "hybridtvType" : null,
+    "isChannelChanged" : false,
+    "isDescrambled" : false,
+    "isFineTuned" : false,
+    "isHEVCChannel" : false,
+    "isInteractiveRestrictionChannel" : false,
+    "isInvisible" : false,
+    "isLocked" : false,
+    "isReplaceChannel" : false,
+    "isScrambled" : false,
+    "isSkipped" : false,
+    "physicalNumber" : 2,
+    "returnValue" : true,
+    "signalChannelId" : "700_7070_20480"
+  },
+  "type" : "response"
+}

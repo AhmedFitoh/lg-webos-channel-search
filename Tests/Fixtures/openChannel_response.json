@@ -1,0 +1,7 @@
+{
+  "id" : "open_channel_1",
+  "payload" : {
+    "returnValue" : true
+  },
+  "type" : "response"
+}

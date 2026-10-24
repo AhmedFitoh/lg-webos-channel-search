@@ -1,0 +1,569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1CC6FDDFDE2839F14E77B696 /* TVClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AEEA713214B2F0F920598D /* TVClient.swift */; };
+		217B2EF918F3B7D8BDB33D69 /* NowPlayingBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E65D1C19DFA0461B9BCAA2 /* NowPlayingBar.swift */; };
+		2B980BC77FD902B700AEBCED /* ChannelListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F3BC3FDB47794E23783F4F /* ChannelListView.swift */; };
+		2BDD9B232BD1FA133B4A4395 /* ConnectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997AB884B1AF94E482873198 /* ConnectView.swift */; };
+		2D93FA3A211E496FE851CC18 /* WakeOnLAN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8814D69A6289FC7A2EA36A0F /* WakeOnLAN.swift */; };
+		2DD901161F5FFA0FDF5B6CA1 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36724A9E14EB4292992DB07 /* SettingsView.swift */; };
+		2E42B7AD5ABC9DB2285BD7C5 /* TVConnectionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A51D0D54556B7D225091D6A /* TVConnectionState.swift */; };
+		39C2B7AE636227A8AC39EA45 /* SSAPMessageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDBA8128E2605E3FED90E95 /* SSAPMessageTests.swift */; };
+		3BB45C9B37A15709878A8605 /* MockTVClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D500387EAE91A68403D2DC0 /* MockTVClient.swift */; };
+		411BDED70A42653E121A61D1 /* KeychainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF7143750A9518D6D9B0982 /* KeychainStore.swift */; };
+		4B0A2E0BC12151E3D27158C3 /* FavoriteChannelsWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590006F7C119E622317901D7 /* FavoriteChannelsWidget.swift */; };
+		4BA6CC6DA3E41BE1DDABFA28 /* ArabicNormalizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC965536CF8420ADE3D2A85B /* ArabicNormalizerTests.swift */; };
+		690FFC7DABC79D06C5B5877E /* LGChannelSearchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C70FC74DBC9CB76247643A /* LGChannelSearchApp.swift */; };
+		704EBBEB863CBFE5EC0C81BA /* SSAPMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E945F30DC778F509BB00AC /* SSAPMessage.swift */; };
+		75B7B1970C1B9ED92585A5B2 /* ArabicNormalizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84114B0C08DF9224756925D0 /* ArabicNormalizer.swift */; };
+		7E67D7ACE37B4B90ECC83830 /* SubnetScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE543CDD4506B775CE7FF5B /* SubnetScanner.swift */; };
+		82171F02BECB374CE27F075D /* TuneChannelIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFF4592EA7D9AFD0CE86CB6 /* TuneChannelIntent.swift */; };
+		94FD07EA69E2E4011A6A9E1C /* RemoteControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2E4C9F88DE899B83698752 /* RemoteControlView.swift */; };
+		BDF6CF4F79904B9DDC08ABAE /* TrustDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CB364D1EB4959BDF049821 /* TrustDelegate.swift */; };
+		C8833E55483DB1005F6121E2 /* SearchEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD65614B92007E614535CAC5 /* SearchEngineTests.swift */; };
+		CF8EB9B94261F96F03610065 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5366F8F85C489AD7828C50A6 /* Channel.swift */; };
+		D5D7CB04193E6848A653B89E /* ChannelRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA628964A5624200CA2FC49 /* ChannelRepositoryTests.swift */; };
+		E4E5245AFCEECBE6C87D83DD /* ChannelRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654955929AFC484C519EF91A /* ChannelRepository.swift */; };
+		EFC2F7D31186AF2C358CFB3A /* SearchEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CFF29BA5B0C8F6FDF50638 /* SearchEngine.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F1A2B8667CD8E1AEAD7E5391 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48DB579FA108916E38B8727F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA9422045884CB75F66E2830;
+			remoteInfo = LGChannelSearch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03C4979A279D7C2CAD146E07 /* LGChannelSearchTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = LGChannelSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0409F985A1ED6D8BFC73E6B2 /* LGChannelSearch.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = LGChannelSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04CB364D1EB4959BDF049821 /* TrustDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrustDelegate.swift; sourceTree = "<group>"; };
+		12E65D1C19DFA0461B9BCAA2 /* NowPlayingBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingBar.swift; sourceTree = "<group>"; };
+		16CFF29BA5B0C8F6FDF50638 /* SearchEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchEngine.swift; sourceTree = "<group>"; };
+		21C70FC74DBC9CB76247643A /* LGChannelSearchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LGChannelSearchApp.swift; sourceTree = "<group>"; };
+		29F3BC3FDB47794E23783F4F /* ChannelListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelListView.swift; sourceTree = "<group>"; };
+		2CF7143750A9518D6D9B0982 /* KeychainStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStore.swift; sourceTree = "<group>"; };
+		34AEEA713214B2F0F920598D /* TVClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVClient.swift; sourceTree = "<group>"; };
+		3D500387EAE91A68403D2DC0 /* MockTVClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTVClient.swift; sourceTree = "<group>"; };
+		3F2E4C9F88DE899B83698752 /* RemoteControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteControlView.swift; sourceTree = "<group>"; };
+		4DFF4592EA7D9AFD0CE86CB6 /* TuneChannelIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuneChannelIntent.swift; sourceTree = "<group>"; };
+		5366F8F85C489AD7828C50A6 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		590006F7C119E622317901D7 /* FavoriteChannelsWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteChannelsWidget.swift; sourceTree = "<group>"; };
+		5A51D0D54556B7D225091D6A /* TVConnectionState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVConnectionState.swift; sourceTree = "<group>"; };
+		654955929AFC484C519EF91A /* ChannelRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelRepository.swift; sourceTree = "<group>"; };
+		84114B0C08DF9224756925D0 /* ArabicNormalizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArabicNormalizer.swift; sourceTree = "<group>"; };
+		8814D69A6289FC7A2EA36A0F /* WakeOnLAN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeOnLAN.swift; sourceTree = "<group>"; };
+		997AB884B1AF94E482873198 /* ConnectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectView.swift; sourceTree = "<group>"; };
+		AC965536CF8420ADE3D2A85B /* ArabicNormalizerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArabicNormalizerTests.swift; sourceTree = "<group>"; };
+		AFE543CDD4506B775CE7FF5B /* SubnetScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubnetScanner.swift; sourceTree = "<group>"; };
+		BCA628964A5624200CA2FC49 /* ChannelRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelRepositoryTests.swift; sourceTree = "<group>"; };
+		C4E945F30DC778F509BB00AC /* SSAPMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSAPMessage.swift; sourceTree = "<group>"; };
+		DD65614B92007E614535CAC5 /* SearchEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchEngineTests.swift; sourceTree = "<group>"; };
+		E36724A9E14EB4292992DB07 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		EFDBA8128E2605E3FED90E95 /* SSAPMessageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSAPMessageTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		02D76F4C92B4857F51295D82 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				3D500387EAE91A68403D2DC0 /* MockTVClient.swift */,
+			);
+			name = Mocks;
+			path = Tests/Mocks;
+			sourceTree = "<group>";
+		};
+		15A1BBEEF06447DD165C7195 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				77CC95AB07F4F3030533E0A6 /* Channels */,
+				25334E8A2CFFCD819983A941 /* Connect */,
+				7F476BF7C24C4B30CDB858F1 /* NowPlaying */,
+				F0162EFE6FAD545E63364B1F /* Remote */,
+				3E95EDE7E1572583084D2D61 /* Settings */,
+				8160562AD7F66A438DAB3CAF /* Shortcuts */,
+				AAA1C77061A950819DBB124C /* Widgets */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		1649413518AF020D46CB28CD /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2CF7143750A9518D6D9B0982 /* KeychainStore.swift */,
+				C4E945F30DC778F509BB00AC /* SSAPMessage.swift */,
+				AFE543CDD4506B775CE7FF5B /* SubnetScanner.swift */,
+				04CB364D1EB4959BDF049821 /* TrustDelegate.swift */,
+				34AEEA713214B2F0F920598D /* TVClient.swift */,
+				5A51D0D54556B7D225091D6A /* TVConnectionState.swift */,
+				8814D69A6289FC7A2EA36A0F /* WakeOnLAN.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		25334E8A2CFFCD819983A941 /* Connect */ = {
+			isa = PBXGroup;
+			children = (
+				997AB884B1AF94E482873198 /* ConnectView.swift */,
+			);
+			path = Connect;
+			sourceTree = "<group>";
+		};
+		3E1A0A0AB64DC38FB9CE8186 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				21C70FC74DBC9CB76247643A /* LGChannelSearchApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		3E95EDE7E1572583084D2D61 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				E36724A9E14EB4292992DB07 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		77CC95AB07F4F3030533E0A6 /* Channels */ = {
+			isa = PBXGroup;
+			children = (
+				29F3BC3FDB47794E23783F4F /* ChannelListView.swift */,
+			);
+			path = Channels;
+			sourceTree = "<group>";
+		};
+		7A4801FA657EF0436C8F0665 = {
+			isa = PBXGroup;
+			children = (
+				3E1A0A0AB64DC38FB9CE8186 /* App */,
+				1649413518AF020D46CB28CD /* Core */,
+				9E4D178B0A8BDA21194998DD /* Data */,
+				15A1BBEEF06447DD165C7195 /* Features */,
+				02D76F4C92B4857F51295D82 /* Mocks */,
+				C23193D7EE436B0C773CE5F6 /* Search */,
+				84A070133869013B943C1B7D /* Tests */,
+				8F1EFAED2D03B5CC2EA29C32 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7F476BF7C24C4B30CDB858F1 /* NowPlaying */ = {
+			isa = PBXGroup;
+			children = (
+				12E65D1C19DFA0461B9BCAA2 /* NowPlayingBar.swift */,
+			);
+			path = NowPlaying;
+			sourceTree = "<group>";
+		};
+		8160562AD7F66A438DAB3CAF /* Shortcuts */ = {
+			isa = PBXGroup;
+			children = (
+				4DFF4592EA7D9AFD0CE86CB6 /* TuneChannelIntent.swift */,
+			);
+			path = Shortcuts;
+			sourceTree = "<group>";
+		};
+		84A070133869013B943C1B7D /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				AC965536CF8420ADE3D2A85B /* ArabicNormalizerTests.swift */,
+				BCA628964A5624200CA2FC49 /* ChannelRepositoryTests.swift */,
+				DD65614B92007E614535CAC5 /* SearchEngineTests.swift */,
+				EFDBA8128E2605E3FED90E95 /* SSAPMessageTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		8F1EFAED2D03B5CC2EA29C32 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0409F985A1ED6D8BFC73E6B2 /* LGChannelSearch.app */,
+				03C4979A279D7C2CAD146E07 /* LGChannelSearchTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9E4D178B0A8BDA21194998DD /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				5366F8F85C489AD7828C50A6 /* Channel.swift */,
+				654955929AFC484C519EF91A /* ChannelRepository.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		AAA1C77061A950819DBB124C /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				590006F7C119E622317901D7 /* FavoriteChannelsWidget.swift */,
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
+		C23193D7EE436B0C773CE5F6 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				84114B0C08DF9224756925D0 /* ArabicNormalizer.swift */,
+				16CFF29BA5B0C8F6FDF50638 /* SearchEngine.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		F0162EFE6FAD545E63364B1F /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				3F2E4C9F88DE899B83698752 /* RemoteControlView.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		37ADB559A0315825F417F311 /* LGChannelSearchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C33C3503A9E8A00297AA1A9 /* Build configuration list for PBXNativeTarget "LGChannelSearchTests" */;
+			buildPhases = (
+				9CBC81EBB9C610CC52F259FF /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42838C277D894817F2D759D4 /* PBXTargetDependency */,
+			);
+			name = LGChannelSearchTests;
+			productName = LGChannelSearchTests;
+			productReference = 03C4979A279D7C2CAD146E07 /* LGChannelSearchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FA9422045884CB75F66E2830 /* LGChannelSearch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3556162452449864C59C1C42 /* Build configuration list for PBXNativeTarget "LGChannelSearch" */;
+			buildPhases = (
+				CFB233B119C2ADBCA31962F2 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LGChannelSearch;
+			productName = LGChannelSearch;
+			productReference = 0409F985A1ED6D8BFC73E6B2 /* LGChannelSearch.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		48DB579FA108916E38B8727F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = 28A3745AC9B54F587F089A83 /* Build configuration list for PBXProject "LGChannelSearch" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 7A4801FA657EF0436C8F0665;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA9422045884CB75F66E2830 /* LGChannelSearch */,
+				37ADB559A0315825F417F311 /* LGChannelSearchTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9CBC81EBB9C610CC52F259FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BA6CC6DA3E41BE1DDABFA28 /* ArabicNormalizerTests.swift in Sources */,
+				D5D7CB04193E6848A653B89E /* ChannelRepositoryTests.swift in Sources */,
+				39C2B7AE636227A8AC39EA45 /* SSAPMessageTests.swift in Sources */,
+				C8833E55483DB1005F6121E2 /* SearchEngineTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFB233B119C2ADBCA31962F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75B7B1970C1B9ED92585A5B2 /* ArabicNormalizer.swift in Sources */,
+				CF8EB9B94261F96F03610065 /* Channel.swift in Sources */,
+				2B980BC77FD902B700AEBCED /* ChannelListView.swift in Sources */,
+				E4E5245AFCEECBE6C87D83DD /* ChannelRepository.swift in Sources */,
+				2BDD9B232BD1FA133B4A4395 /* ConnectView.swift in Sources */,
+				4B0A2E0BC12151E3D27158C3 /* FavoriteChannelsWidget.swift in Sources */,
+				411BDED70A42653E121A61D1 /* KeychainStore.swift in Sources */,
+				690FFC7DABC79D06C5B5877E /* LGChannelSearchApp.swift in Sources */,
+				3BB45C9B37A15709878A8605 /* MockTVClient.swift in Sources */,
+				217B2EF918F3B7D8BDB33D69 /* NowPlayingBar.swift in Sources */,
+				94FD07EA69E2E4011A6A9E1C /* RemoteControlView.swift in Sources */,
+				704EBBEB863CBFE5EC0C81BA /* SSAPMessage.swift in Sources */,
+				EFC2F7D31186AF2C358CFB3A /* SearchEngine.swift in Sources */,
+				2DD901161F5FFA0FDF5B6CA1 /* SettingsView.swift in Sources */,
+				7E67D7ACE37B4B90ECC83830 /* SubnetScanner.swift in Sources */,
+				1CC6FDDFDE2839F14E77B696 /* TVClient.swift in Sources */,
+				2E42B7AD5ABC9DB2285BD7C5 /* TVConnectionState.swift in Sources */,
+				BDF6CF4F79904B9DDC08ABAE /* TrustDelegate.swift in Sources */,
+				82171F02BECB374CE27F075D /* TuneChannelIntent.swift in Sources */,
+				2D93FA3A211E496FE851CC18 /* WakeOnLAN.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		42838C277D894817F2D759D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA9422045884CB75F66E2830 /* LGChannelSearch */;
+			targetProxy = F1A2B8667CD8E1AEAD7E5391 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0F6637DE8B5EE83120F48294 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahmedfitoh.LGChannelSearch;
+				PRODUCT_NAME = LGChannelSearch;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1E79065A81A5EB5133F93561 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahmedfitoh.LGChannelSearchTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LGChannelSearch.app/LGChannelSearch";
+			};
+			name = Debug;
+		};
+		A7ECFE90195118B7F314E3CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		B0E5C4DF34805AE9C24E2882 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahmedfitoh.LGChannelSearchTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LGChannelSearch.app/LGChannelSearch";
+			};
+			name = Release;
+		};
+		B24312B08657F7DC3973A3B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahmedfitoh.LGChannelSearch;
+				PRODUCT_NAME = LGChannelSearch;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EECD6E8F289B0F26D6A29412 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28A3745AC9B54F587F089A83 /* Build configuration list for PBXProject "LGChannelSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EECD6E8F289B0F26D6A29412 /* Debug */,
+				A7ECFE90195118B7F314E3CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		3556162452449864C59C1C42 /* Build configuration list for PBXNativeTarget "LGChannelSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F6637DE8B5EE83120F48294 /* Debug */,
+				B24312B08657F7DC3973A3B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8C33C3503A9E8A00297AA1A9 /* Build configuration list for PBXNativeTarget "LGChannelSearchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E79065A81A5EB5133F93561 /* Debug */,
+				B0E5C4DF34805AE9C24E2882 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 48DB579FA108916E38B8727F /* Project object */;
+}
