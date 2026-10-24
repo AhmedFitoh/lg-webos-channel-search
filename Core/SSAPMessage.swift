@@ -16,10 +16,19 @@ public struct SSAPRegisterFrame: Codable, Sendable {
     public let id: String
     public let payload: SSAPRegisterPayload
 
-    public init(id: String = "register_0", clientKey: String?) {
+    public init(
+        id: String = "register_0",
+        clientKey: String?,
+        forcePairing: Bool = false,
+        manifest: SSAPManifest = .defaultManifest
+    ) {
         self.type = SSAPFrameType.register.rawValue
         self.id = id
-        self.payload = SSAPRegisterPayload(clientKey: clientKey)
+        self.payload = SSAPRegisterPayload(
+            forcePairing: forcePairing,
+            clientKey: clientKey,
+            manifest: manifest
+        )
     }
 }
 
@@ -51,10 +60,16 @@ public struct SSAPRegisterPayload: Codable, Sendable {
 
 public struct SSAPManifest: Codable, Sendable {
     public let manifestVersion: Int
+    public let appVersion: String
     public let permissions: [String]
 
-    public init(manifestVersion: Int = 1, permissions: [String]) {
+    public init(
+        manifestVersion: Int = 1,
+        appVersion: String = "1.1",
+        permissions: [String] = SSAPManifest.defaultPermissions
+    ) {
         self.manifestVersion = manifestVersion
+        self.appVersion = appVersion
         self.permissions = permissions
     }
 
@@ -70,18 +85,29 @@ public struct SSAPManifest: Codable, Sendable {
         "CONTROL_INPUT_JOYSTICK",
         "CONTROL_INPUT_MEDIA_RECORDING",
         "CONTROL_INPUT_MEDIA_PLAYBACK",
+        "CONTROL_INPUT_TEXT",
         "CONTROL_INPUT_TV",
+        "CONTROL_MOUSE_AND_KEYBOARD",
         "CONTROL_POWER",
         "READ_APP_STATUS",
         "READ_CURRENT_CHANNEL",
         "READ_INPUT_DEVICE_LIST",
+        "READ_INSTALLED_APPS",
+        "READ_LGE_SDX",
+        "READ_LGE_TV_INPUT_EVENTS",
         "READ_NETWORK_STATE",
+        "READ_NOTIFICATIONS",
         "READ_RUNNING_APPS",
         "READ_TV_CHANNEL_LIST",
         "WRITE_NOTIFICATION_TOAST",
+        "WRITE_NOTIFICATION_ALERT",
+        "WRITE_SETTINGS",
+        "SEARCH",
         "READ_POWER_STATE",
         "READ_COUNTRY_INFO",
         "READ_SETTINGS",
+        "READ_UPDATE_INFO",
+        "UPDATE_FROM_REMOTE_APP",
         "CONTROL_TV_SCREEN",
         "CONTROL_TV_STANBY",
         "CONTROL_FAVORITE_GROUP",
@@ -113,7 +139,7 @@ public struct SSAPManifest: Codable, Sendable {
         "CONTROL_WOL"
     ]
 
-    public static let defaultManifest = SSAPManifest(permissions: defaultPermissions)
+    public static let defaultManifest = SSAPManifest()
 }
 
 public struct SSAPRequest<Payload: Encodable & Sendable>: Encodable, Sendable {

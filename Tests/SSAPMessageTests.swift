@@ -62,6 +62,9 @@ final class SSAPMessageTests: XCTestCase {
 
     func testRegisterFrameEncodingAndClientKeyRedaction() throws {
         let frame = SSAPRegisterFrame(id: "reg_test", clientKey: "super_secret_key_12345")
+        XCTAssertTrue(frame.payload.manifest.permissions.contains("CONTROL_MOUSE_AND_KEYBOARD"))
+        XCTAssertTrue(frame.payload.manifest.permissions.contains("CONTROL_INPUT_TEXT"))
+
         let encoded = try JSONEncoder().encode(frame)
         let jsonString = try XCTUnwrap(String(data: encoded, encoding: .utf8))
 

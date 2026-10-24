@@ -218,9 +218,12 @@ public actor TVClient: TVClientProtocol {
         forcePairing: Bool
     ) async throws -> String {
         let frame = SSAPRegisterFrame(
-            id: "register_0",
-            clientKey: forcePairing ? nil : savedKey
+            id: "register_\(nextRequestNumber)",
+            clientKey: forcePairing ? nil : savedKey,
+            forcePairing: forcePairing
         )
+        nextRequestNumber += 1
+
         if savedKey == nil || forcePairing {
             state = .awaitingApproval(host: host)
         }
@@ -328,13 +331,37 @@ public actor TVClient: TVClientProtocol {
         guard let activeSession = session else {
             throw TVClientError.notConnected
         }
-        let data = try await sendRequest(uri: SSAPURI.getPointerInputSocket, payload: Optional<SSAPEmptyPayload>.none)
+
+        let data: Data
+        do {
+            data = try await sendRequest(uri: SSAPURI.getPointerInputSocket, payload: Optional<SSAPEmptyPayload>.none)
+        } catch let TVClientError.ssapError(_, message) where message.contains("401") || message.localizedCaseInsensitiveContains("insufficient permissions") {
+            guard let host = currentHost else {
+                throw TVClientError.pairingRejected("Pointer input requires re-pairing with the TV.")
+            }
+            debugLog("getPointerInputSocket returned 401; re-registering to grant CONTROL_MOUSE_AND_KEYBOARD permission...")
+            do {
+                let newKey = try await performRegistration(host: host, savedKey: nil, forcePairing: false)
+                try? credentialsStore.saveClientKey(newKey, forHost: host)
+                state = .ready(host: host)
+                data = try await sendRequest(uri: SSAPURI.getPointerInputSocket, payload: Optional<SSAPEmptyPayload>.none)
+            } catch {
+                if webSocketTask != nil {
+                    state = .ready(host: host)
+                }
+                throw TVClientError.pairingRejected(
+                    "Remote D-Pad requires pointer permission. Please accept the pairing prompt on your TV (or use Settings → Re-Pair with TV)."
+                )
+            }
+        }
+
         let decoded = try JSONDecoder().decode(SSAPResponse<SSAPPointerInputSocketPayload>.self, from: data)
         guard let path = decoded.payload?.socketPath, let url = URL(string: path) else {
             throw TVClientError.decodingFailed("Missing socketPath in getPointerInputSocket response")
         }
         let task = activeSession.webSocketTask(with: url)
         task.resume()
+        try? await sendOneShotPing(on: task, timeoutNanoseconds: 1_500_000_000)
         pointerSocketTask = task
         return task
     }
